@@ -125,3 +125,37 @@ factorielle.forEach((i)=>{
 })
 
 console.log(total)
+
+// 08 - Chess board
+
+const chess = [1,2,3,4,5,6,7,8]
+const chessTaille = [1,2,3,4,5,6,7,8]
+const chessLine= []
+chess.forEach((i)=>{
+		chessTaille.forEach((i)=>{
+			if (i%2===0){
+				chessLine.push(["X"])
+			}else{
+				chessLine.push([" "])
+			}
+
+		})
+		
+})
+
+console.log(chessLine);
+
+
+// 09 - Exercice 3 bis
+
+const numFilter = (array3) =>{
+	const numbers = array3.filter((num) =>{
+		if (typeof(num) === "number"){
+			return num
+		}
+	})
+
+	console.log(numbers);
+}
+
+numFilter([1,6,"number",8,"java",90])
