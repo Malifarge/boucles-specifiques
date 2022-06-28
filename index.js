@@ -85,8 +85,6 @@ const Cakes = [
 	},
 ]
 
-console.log(Cakes[2].flavor);
-
 const chocolate = Cakes.filter((cake)=>{
     const i = Cakes.indexOf(cake)
     if (Cakes[i].flavor === "chocolate"){
@@ -105,3 +103,25 @@ const soldOut = chocolate.map((cake)=>{
 })
 
 console.log(soldOut);
+
+// 06 - Cake v2
+
+const pie = Cakes.find((cake)=>{
+    const i = Cakes.indexOf(cake)
+    return Cakes[i].name === "pie"
+})
+
+console.log(pie);
+
+// 07 - Factorielle forEach
+
+const factorielle = [1,2,3,4,5,6,7,8,9]
+let total = 1
+
+factorielle.forEach((i)=>{
+	total = total*(i)
+	return total
+	
+})
+
+console.log(total)
