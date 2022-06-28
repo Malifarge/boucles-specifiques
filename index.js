@@ -54,3 +54,54 @@ const even = numbers2.filter((num)=>{
 })
 
 console.log(even);
+
+// 05 - Cakes
+
+const Cakes = [
+	{
+		name: "cake",
+		flavor: "vanilla",
+		status: "available"
+	},
+	{
+		name: "brownie",
+		flavor: "chocolate",
+		status: "available"
+	},
+	{
+		name: "pie",
+		flavor: "strawberry",
+		status: "available"
+	},
+	{
+		name: "muffin",
+		flavor: "pistachio",
+		status: "available"
+	},
+	{
+		name: "donut",
+		flavor: "chocolate",
+		status: "available"
+	},
+]
+
+console.log(Cakes[2].flavor);
+
+const chocolate = Cakes.filter((cake)=>{
+    const i = Cakes.indexOf(cake)
+    if (Cakes[i].flavor === "chocolate"){
+            return cake
+        }
+
+})
+
+const soldOut = chocolate.map((cake)=>{
+    const j = chocolate.indexOf(cake)
+    return {
+        name: chocolate[j].name,
+        flavor: chocolate[j].flavor,
+        status: "sold out !"
+    }
+})
+
+console.log(soldOut);
