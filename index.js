@@ -22,10 +22,6 @@ const longNames = [
 	}
 ]
 
-
-
-console.log(longNames[0].firstName);
-
 const shortNames = longNames.map((arrayN) => {
     const i = longNames.indexOf(arrayN)
     return {
@@ -34,3 +30,15 @@ const shortNames = longNames.map((arrayN) => {
 })
 
 console.log(shortNames);
+
+// 03 - Filter Numbers
+
+const array2 = [1,"toto",34,"javascript",8,7,"number"]
+
+const numbers = array2.filter((num) =>{
+    if (typeof(num) === "number"){
+        return num
+    }
+})
+
+console.log(numbers);
