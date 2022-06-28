@@ -42,3 +42,15 @@ const numbers = array2.filter((num) =>{
 })
 
 console.log(numbers);
+
+// 04 - Filter Even
+
+const numbers2 = [ 1,2,3,4,5,6,7,8]
+
+const even = numbers2.filter((num)=>{
+    if (num%2===0){
+        return num
+    }
+})
+
+console.log(even);
