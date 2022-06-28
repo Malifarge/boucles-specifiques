@@ -128,18 +128,32 @@ console.log(total)
 
 // 08 - Chess board
 
-const size = [0,1,2,3,4,5,6,7]
+
+// taille colonne et ligne
+
+const size = [0,1,2,3,4,5,6,7]  
+
+// je fait 8 fois
 
 size.forEach((i) =>{
+
+	// création d'un ligne
+
 	let row = ""
 
+	// complétion de la ligne
+
 	size.forEach((j)=>{
+		// une case sur 2 et une ligne sur 2
 		if ((j+i)%2===0){
 			row += "[ ]"
 		}else{
 			row += "[X]"
 		}
 	})
+
+	// affiche de la ligne
+
 	console.log(row);
 }) 
 
