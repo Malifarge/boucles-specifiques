@@ -128,23 +128,20 @@ console.log(total)
 
 // 08 - Chess board
 
-const chess = [1,2,3,4,5,6,7,8]
-const chessTaille = [1,2,3,4,5,6,7,8]
-const chessLine= []
-chess.forEach((i)=>{
-		chessTaille.forEach((i)=>{
-			if (i%2===0){
-				chessLine.push(["X"])
-			}else{
-				chessLine.push([" "])
-			}
+const size = [0,1,2,3,4,5,6,7]
 
-		})
-		
-})
+size.forEach((num,i) =>{
+	let row = ""
 
-console.log(chessLine);
-
+	size.forEach((j)=>{
+		if ((j+i)%2===0){
+			row += "[ ]"
+		}else{
+			row += "[X]"
+		}
+	})
+	console.log(row);
+}) 
 
 // 09 - Exercice 3 bis
 
