@@ -130,7 +130,7 @@ console.log(total)
 
 const size = [0,1,2,3,4,5,6,7]
 
-size.forEach((num,i) =>{
+size.forEach((i) =>{
 	let row = ""
 
 	size.forEach((j)=>{
