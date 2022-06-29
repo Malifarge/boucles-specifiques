@@ -35,9 +35,7 @@ console.log(shortNames);
 const array2 = [1,"toto",34,"javascript",8,7,"number"]
 
 const numbers = array2.filter((num) =>{
-    if (typeof(num) === "number"){
-        return num
-    }
+    return typeof num === "number"
 })
 
 console.log(numbers);
@@ -157,9 +155,8 @@ size.forEach((i) =>{
 
 const numFilter = (array3) =>{
 	const numbers = array3.filter((num) =>{
-		if (typeof(num) === "number"){
-			return num
-		}
+
+		return typeof (num) === "number"
 	})
 
 	console.log(numbers);
