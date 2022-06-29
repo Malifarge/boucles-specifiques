@@ -35,6 +35,7 @@ console.log(shortNames);
 const array2 = [1,"toto",34,"javascript",8,7,"number"]
 
 const numbers = array2.filter((num) =>{
+
     return typeof num === "number"
 })
 
@@ -45,9 +46,7 @@ console.log(numbers);
 const numbers2 = [ 1,2,3,4,5,6,7,8]
 
 const even = numbers2.filter((num)=>{
-    if (num%2===0){
-        return num
-    }
+    return num%2 === 0
 })
 
 console.log(even);
@@ -83,9 +82,8 @@ const Cakes = [
 ]
 
 const chocolate = Cakes.filter((cake)=>{
-    if (cake.flavor === "chocolate"){
-            return cake
-        }
+   
+		return cake.flavor === "chocolate"
 
 })
 
