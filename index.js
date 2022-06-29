@@ -23,9 +23,8 @@ const longNames = [
 ]
 
 const shortNames = longNames.map((arrayN) => {
-    const i = longNames.indexOf(arrayN)
     return {
-        name: `${longNames[i].firstName} ${longNames[i].lastName}`
+        name: `${arrayN.firstName} ${arrayN.lastName}`
     }
 })
 
@@ -86,18 +85,16 @@ const Cakes = [
 ]
 
 const chocolate = Cakes.filter((cake)=>{
-    const i = Cakes.indexOf(cake)
-    if (Cakes[i].flavor === "chocolate"){
+    if (cake.flavor === "chocolate"){
             return cake
         }
 
 })
 
 const soldOut = chocolate.map((cake)=>{
-    const j = chocolate.indexOf(cake)
     return {
-        name: chocolate[j].name,
-        flavor: chocolate[j].flavor,
+        name: cake.name,
+        flavor: cake.flavor,
         status: "sold out !"
     }
 })
@@ -107,8 +104,7 @@ console.log(soldOut);
 // 06 - Cake v2
 
 const pie = Cakes.find((cake)=>{
-    const i = Cakes.indexOf(cake)
-    return Cakes[i].name === "pie"
+    return cake.name === "pie"
 })
 
 console.log(pie);
