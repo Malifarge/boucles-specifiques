@@ -81,18 +81,15 @@ const Cakes = [
 	},
 ]
 
-const chocolate = Cakes.filter((cake)=>{
+const chocolates = Cakes.filter((cake)=>{
    
 		return cake.flavor === "chocolate"
 
 })
 
-const soldOut = chocolate.map((cake)=>{
-    return {
-        name: cake.name,
-        flavor: cake.flavor,
-        status: "sold out !"
-    }
+const soldOut = chocolates.map((chocolate)=>{
+    chocolate.status = "sold out!"
+	return chocolate
 })
 
 console.log(soldOut);
