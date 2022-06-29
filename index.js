@@ -122,7 +122,7 @@ const size = [0,1,2,3,4,5,6,7]
 
 // je fait 8 fois
 
-size.forEach((i) =>{
+size.forEach((line,i) =>{
 
 	// création d'un ligne
 
@@ -130,7 +130,7 @@ size.forEach((i) =>{
 
 	// complétion de la ligne
 
-	size.forEach((j)=>{
+	size.forEach((square,j)=>{
 		// une case sur 2 et une ligne sur 2
 		if ((j+i)%2===0){
 			row += "[ ]"
