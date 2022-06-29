@@ -109,8 +109,6 @@ let total = 1
 
 factorielle.forEach((i)=>{
 	total = total*(i)
-	return total
-	
 })
 
 console.log(total)
